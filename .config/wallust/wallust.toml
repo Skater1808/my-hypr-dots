@@ -1,0 +1,10 @@
+# wallust configuration
+# Generated for wofi + kitty + waybar + neovim theming
+
+[templates]
+wofi = { src = "wofi.j2", dst = "~/.config/wofi/style.css" }
+kitty = { src = "kitty.conf", dst = "~/.config/kitty/colors.conf" }
+waybar = { src = "waybar.css", dst = "~/.config/waybar/style.css" }
+neopywal = { src = "colors_neopywal.vim", dst = "~/.cache/wallust/colors_neopywal.vim" }
+cava = { src = "cava", dst = "~/.config/cava/config" }
+pywal_json = { src = "colors_pywal.json.j2", dst = "~/.cache/wal/colors.json" }

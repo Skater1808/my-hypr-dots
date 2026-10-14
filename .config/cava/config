@@ -1,0 +1,27 @@
+
+[general]
+# Framerate für eine flüssige Darstellung der Balken
+framerate = 60
+
+# 0 bedeutet, die Anzahl der Balken passt sich automatisch der Fensterbreite an
+bars = 0
+bar_width = 3
+bar_spacing = 1
+
+[input]
+# Automatische Erkennung deiner Audio-Ausgabe (Pipewire / PulseAudio)
+method = pulse
+source = auto
+
+[color]
+# Aktiviert den Farbverlauf
+gradient = 1
+
+# Die doppelten geschweiften Klammern sorgen dafür, dass Wallust die Hex-Farben injiziert
+gradient_color_1 = '#E5D8D5'
+gradient_color_2 = '#ADC7E2'
+
+[smoothing]
+# Kontrolliert das Verhalten, wie "smooth" die Balken nach unten fallen
+gravity = 100
+

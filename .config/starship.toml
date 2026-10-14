@@ -1,0 +1,28 @@
+# Eine leere Zeile vor dem Prompt einfügen
+add_newline = true
+
+# Format des gesamten Prompts definieren
+format = """$os$directory$character """
+
+# Das OS-Symbol ganz links
+# Nutzt die von Wallust generierte Hintergrundfarbe "black" (oft dein dunkelstes Grau/Schwarz)
+[os]
+disabled = false
+format = "[$symbol]($style)"
+style = "bg:black fg:white"
+symbols.Arch = "    "
+
+# Das Verzeichnis-Modul
+# Nutzt denselben Hintergrund und greift für den Pfad auf Wallusts Akzentfarbe "cyan" oder "blue" zu
+[directory]
+style = "bg:black fg:cyan"
+format = "[$read_only]($style)[$path]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+home_symbol = " ~"
+
+# Das Endstück (die Pfeilspitze)
+# Färbt das Dreieck in der Terminal-Hintergrundfarbe "black" ein
+[character]
+success_symbol = "[](bg:none fg:black) "
+error_symbol = "[](bg:none fg:red) "

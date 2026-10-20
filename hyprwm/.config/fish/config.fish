@@ -8,6 +8,7 @@ alias ls='ls --color=always'
 alias docker='sudo docker'
 alias grep='rg'
 alias cat='bat'
+alias cd='z'
 
 # Fastfetch nur ausführen, wenn das Terminal breit genug ist
 if test (tput cols) -ge 90

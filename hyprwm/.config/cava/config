@@ -18,8 +18,8 @@ source = auto
 gradient = 1
 
 # Die doppelten geschweiften Klammern sorgen dafür, dass Wallust die Hex-Farben injiziert
-gradient_color_1 = '#E5D8D5'
-gradient_color_2 = '#ADC7E2'
+gradient_color_1 = '#E2E0E1'
+gradient_color_2 = '#E6A844'
 
 [smoothing]
 # Kontrolliert das Verhalten, wie "smooth" die Balken nach unten fallen

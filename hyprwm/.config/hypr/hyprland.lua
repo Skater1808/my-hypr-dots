@@ -273,6 +273,9 @@ hl.bind(mainMod .. " + V",
   hl.dsp.exec_cmd(
     [[cliphist list | wofi --dmenu --location=bottom_left --xoffset=20 --yoffset=-20 --width=400 --height=500 --prompt="Zwischenablage..." | cliphist decode | wl-copy]]))
 
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
+hl.bind(mainMod .. " + ALT + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
+
 hl.bind(mainMod .. " + BACKSPACE", hl.dsp.exec_cmd("systemctl suspend"))
 hl.bind(mainMod .. " + CTRL + SPACE", hl.dsp.exec_cmd("/home/emil/Documents/Scripte/change_wallpaper.sh"))
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
